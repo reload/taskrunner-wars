@@ -13,3 +13,11 @@ body {
   border-radius: 5px;
   box-shadow: 0, 0, 20px, rgba(black, 0.8);
 }
+
+// Compile test.
+@for $i from 1 through 1000 {
+  .test-#{$i} {
+    width: ($i / 1000) * 100%;
+    color: red;
+  }
+}
