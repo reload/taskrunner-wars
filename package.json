@@ -2,12 +2,17 @@
   "name": "Test",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "latest",
     "node-sass": "latest",
-    "grunt-sass": "latest",
-    "grunt-contrib-watch": "latest"
+    "coffee-script": "latest",
+    "watch": "latest",
+    "parallelshell": "latest"
   },
   "scripts": {
-    "sass": "node-sass sass:css"
+    "build:css"   : "node-sass sass/ -o css/ --source-map=true",
+    "watch:css"   : "watch 'npm run build:css' sass/",
+    "build:js"    : "coffee --compile --output js/ coffeescript/",
+    "watch:js"    : "watch 'npm run build:js' coffeescript/",
+    "build"       : "npm run build:css && npm run build:js",
+    "build:watch" : "parallelshell 'npm run watch:css' 'npm run watch:js'"
   }
 }
