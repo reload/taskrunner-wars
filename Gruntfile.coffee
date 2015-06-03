@@ -11,12 +11,22 @@ module.exports = (grunt) ->
         files:
           'css/test.css':'sass/test.scss'
 
+    coffee:
+      compile:
+        files:
+          'js/test.js': ['coffeescript/test.coffee']
+
     watch:
       css:
         files: ['sass/*.scss'],
         tasks: ['sass']
 
+      coffee:
+        files: ['coffeescript/*.coffee'],
+        tasks: ['coffee']
+
   grunt.loadNpmTasks('grunt-sass')
+  grunt.loadNpmTasks('grunt-contrib-coffee')
   grunt.loadNpmTasks('grunt-contrib-watch')
 
-  grunt.registerTask('default', ['sass', 'watch'])
+  grunt.registerTask('default', ['sass', 'coffee', 'watch'])

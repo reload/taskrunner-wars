@@ -5,6 +5,7 @@
     "grunt": "latest",
     "node-sass": "latest",
     "grunt-sass": "latest",
+    "grunt-contrib-coffee": "latest",
     "grunt-contrib-watch": "latest"
   },
   "scripts": {
