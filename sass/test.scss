@@ -1,0 +1,15 @@
+@import "bourbon/bourbon";
+body {
+  @include linear-gradient(red,yellow,green,magenta,blue,cyan, red);
+  background-size: 560px;
+  background-repeat: repeat;
+}
+
+.page {
+  background-color: rgba(white, 0.8);
+  width: 940px;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0, 0, 20px, rgba(black, 0.8);
+}
