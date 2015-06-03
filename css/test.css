@@ -3,8 +3,7 @@ body {
   background-image: -webkit-linear-gradient(red, yellow, green, magenta, blue, cyan, red);
   background-image: linear-gradient(red, yellow, green, magenta, blue, cyan, red, , , );
   background-size: 560px;
-  background-repeat: repeat;
-}
+  background-repeat: repeat; }
 
 .page {
   background-color: rgba(255, 255, 255, 0.8);
@@ -12,7 +11,6 @@ body {
   padding: 10px;
   margin: 20px auto;
   border-radius: 5px;
-  box-shadow: 0, 0, 20px, rgba(0, 0, 0, 0.8);
-}
+  box-shadow: 0, 0, 20px, rgba(0, 0, 0, 0.8); }
 
 /*# sourceMappingURL=test.css.map */

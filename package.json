@@ -2,13 +2,9 @@
   "name": "Test",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "latest",
-    "node-sass": "latest",
-    "grunt-sass": "latest",
-    "grunt-contrib-coffee": "latest",
-    "grunt-contrib-watch": "latest"
-  },
-  "scripts": {
-    "sass": "node-sass sass:css"
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-coffee": "latest"
   }
 }
