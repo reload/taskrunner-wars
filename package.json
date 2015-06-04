@@ -4,14 +4,14 @@
   "devDependencies": {
     "node-sass": "latest",
     "coffee-script": "latest",
-    "watch": "latest",
+    "chokidar-cli": "latest",
     "parallelshell": "latest"
   },
   "scripts": {
     "build:css"   : "node-sass sass/ -o css/ --source-map=true",
-    "watch:css"   : "watch 'npm run build:css' sass/",
+    "watch:css"   : "chokidar sass/ -c 'npm run build:css'",
     "build:js"    : "coffee --compile --output js/ coffeescript/",
-    "watch:js"    : "watch 'npm run build:js' coffeescript/",
+    "watch:js"    : "chokidar coffeescript/ -c 'npm run build:js'",
     "build"       : "npm run build:css && npm run build:js",
     "build:watch" : "parallelshell 'npm run watch:css' 'npm run watch:js'"
   }
