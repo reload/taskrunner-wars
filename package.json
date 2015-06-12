@@ -14,7 +14,7 @@
     "build:js"    : "coffee --compile --output js/ coffeescript/",
     "watch:js"    : "chokidar coffeescript/ -c 'npm run build:js'",
     "build"       : "npm run build:css && npm run build:js",
-    "build:watch" : "parallelshell 'npm run watch:css' 'npm run watch:js'",
+    "watch"       : "parallelshell 'npm run watch:css' 'npm run watch:js'",
     "postinstall" : "rm -rf sass/bourbon && ln -s ../node_modules/bourbon/app/assets/stylesheets/ sass/bourbon"
   }
 }
