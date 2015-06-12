@@ -8,8 +8,5 @@
     "grunt-sass": "latest",
     "grunt-contrib-coffee": "latest",
     "grunt-contrib-watch": "latest"
-  },
-  "scripts": {
-    "sass": "node-sass sass:css"
   }
 }
