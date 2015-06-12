@@ -4,15 +4,36 @@ body {
   background-size: 560px;
   background-repeat: repeat;
 }
+/*
+  Output:
+  ==================
+  body {
+    background-color: red;
+    background-image: -webkit-linear-gradient(red, yellow, green, magenta, blue, cyan, red);
+    background-image: linear-gradient(red, yellow, green, magenta, blue, cyan, red, , , );
+    background-size: 560px;
+    background-repeat: repeat; }
+*/
 
 .page {
-  background-color: rgba(white, 0.8);
+  background-color: rgba(#fff, 0.8);
   width: 940px;
   padding: 10px;
   margin: 20px auto;
   border-radius: 5px;
   box-shadow: 0, 0, 20px, rgba(black, 0.8);
 }
+/*
+  Output:
+  ==================
+  .page {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 940px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0, 0, 20px, rgba(0, 0, 0, 0.8); }
+*/
 
 // Compile test.
 $color: red;
