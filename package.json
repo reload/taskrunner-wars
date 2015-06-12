@@ -4,6 +4,7 @@
   "devDependencies": {
     "grunt": "latest",
     "node-sass": "latest",
+    "node-bourbon": "latest",
     "grunt-sass": "latest",
     "grunt-contrib-coffee": "latest",
     "grunt-contrib-watch": "latest"

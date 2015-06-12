@@ -1,4 +1,4 @@
-@import "bourbon/bourbon";
+@import "bourbon";
 body {
   @include linear-gradient(red,yellow,green,magenta,blue,cyan, red);
   background-size: 560px;
