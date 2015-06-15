@@ -10,9 +10,14 @@ module.exports = function (grunt) {
         outputStyle: 'expanded'
       },
       dist: {
-        files: {
-          'css/test.css': 'sass/test.scss'
-        },
+        files: [{
+          expand: true,
+          cwd: 'sass',
+          src: ['*.scss', '**/*.scss'],
+          dest: 'css',
+          ext: '.css',
+          extDot: 'last'
+        }],
         options: {
           includePaths: require('node-bourbon').includePaths
         }
