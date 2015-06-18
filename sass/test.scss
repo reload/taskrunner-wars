@@ -1,6 +1,7 @@
-@import "bourbon/bourbon";
+@import "compass";
+
 body {
-  @include linear-gradient(red,yellow,green,magenta,blue,cyan, red);
+  @include background(linear-gradient(red,yellow,green,magenta,blue,cyan, red));
   background-size: 560px;
   background-repeat: repeat;
 }
