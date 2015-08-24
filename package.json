@@ -7,6 +7,7 @@
     "node-bourbon": "latest",
     "grunt-sass": "latest",
     "grunt-contrib-coffee": "latest",
-    "grunt-contrib-watch": "latest"
+    "grunt-contrib-watch": "latest",
+    "grunt-csscomb": "latest"
   }
 }

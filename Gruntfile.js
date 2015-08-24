@@ -4,6 +4,18 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    csscomb: {
+      dynamic_mappings: {
+          expand: true,
+          cwd: 'sass',
+          src: ['*.scss', '**/*.scss'],
+          dest: 'sass'
+      },
+      options: {
+        config: 'csscomb.json'
+      }
+    },
+
     sass: {
       options: {
         sourceMap: true,
@@ -55,8 +67,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-csscomb');
 
   grunt.registerTask('default', [
+    'csscomb',
     'sass',
     'coffee',
     'watch'

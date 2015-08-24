@@ -1,9 +1,9 @@
 body {
+  background-repeat: repeat;
+  background-size: 560px;
   background-color: red;
   background-image: -webkit-linear-gradient(red, yellow, green, magenta, blue, cyan, red);
   background-image: linear-gradient(red, yellow, green, magenta, blue, cyan, red, , , );
-  background-size: 560px;
-  background-repeat: repeat;
 }
 
 /*
@@ -18,11 +18,11 @@ body {
   }
 */
 .page {
-  background-color: rgba(255, 255, 255, 0.8);
   width: 940px;
-  padding: 10px;
   margin: 20px auto;
+  padding: 10px;
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0, 0, 20px, rgba(0, 0, 0, 0.8);
 }
 
@@ -39,47 +39,47 @@ body {
   }
 */
 .test-1 {
-  width: 0.1%;
+  width: .1%;
   color: red;
 }
 
 .test-2 {
-  width: 0.2%;
+  width: .2%;
   color: red;
 }
 
 .test-3 {
-  width: 0.3%;
+  width: .3%;
   color: red;
 }
 
 .test-4 {
-  width: 0.4%;
+  width: .4%;
   color: red;
 }
 
 .test-5 {
-  width: 0.5%;
+  width: .5%;
   color: red;
 }
 
 .test-6 {
-  width: 0.6%;
+  width: .6%;
   color: red;
 }
 
 .test-7 {
-  width: 0.7%;
+  width: .7%;
   color: red;
 }
 
 .test-8 {
-  width: 0.8%;
+  width: .8%;
   color: red;
 }
 
 .test-9 {
-  width: 0.9%;
+  width: .9%;
   color: red;
 }
 
